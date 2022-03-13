@@ -7,7 +7,8 @@
 This is a very simple setup for Hadoop cluster using docker. Explanation for every command or step is written as comment in all files. 
 
 ## Structure:
-There are three major parts of this setup, 
+There are four major parts of this setup, 
+- **Assets** : This folder contains binaries for Hadoop and Java. Please download JDK 8.0 binaries and hadoop 3.3.1 binaries and rename them to hadoop.tar.gz and jdk.tar.gz and put them under folder 'assets' for it to work properly
 - **Hadoop Base image** : This image contains configurations and setup of Hadoop and Java.
 - **Name Node** : This is located under /hdfs/namenode and extends to Hadoop Base Image. All configurations and assets required for this are located under same folder.
 - **Data Node**: Located under /hdfs/datanode. Mostly is same is same as Namenode just needs to start a different process thus it extends to Namenode instead of directly extending to Hadoop Base Image.
